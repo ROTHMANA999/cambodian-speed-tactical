@@ -1,5 +1,7 @@
 [build]
-  command = "bun run build"
+  # Use npm to run the build script defined in package.json
+  command = "npm run build"
+  # TanStack Start / Vite produces client assets under dist/client
   publish = "dist/client"
 
 [[redirects]]
