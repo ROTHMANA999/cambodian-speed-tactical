@@ -24,9 +24,6 @@ if (fs.existsSync(assetsDir)) {
     scripts.push(`/assets/${indexFiles[0]}`);
   }
 
-  const otherJs = files.filter((f) => /-.*\.js$/.test(f) && !/^index-.*\.js$/.test(f));
-  otherJs.forEach((f) => scripts.push(`/assets/${f}`));
-
   const cssFiles = files.filter((f) => /\.css$/.test(f));
   cssFiles.forEach((f) => styles.push(`/assets/${f}`));
 }
