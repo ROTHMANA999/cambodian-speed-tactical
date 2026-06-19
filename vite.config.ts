@@ -13,6 +13,6 @@ export default defineConfig({
     base: "/",
   },
   tanstackStart: {
-    server: { entry: "server" },
+    server: { entry: "server", nitro: { preset: "netlify" } },
   },
 });
