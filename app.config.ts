@@ -1,6 +1,7 @@
-// Vinxi / Lovable app config — explicitly set server preset for Netlify
-export default {
+import { defineConfig } from "@tanstack/start/config";
+
+export default defineConfig({
   server: {
-    preset: 'netlify',
+    preset: "netlify", // ត្រូវប្តូរចំណុចនេះទៅជា netlify ដាច់ខាត
   },
-}
+});
